@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+
+x=range(0,101)
+
+min=1
+max=100
+val=50
+high="high"
+low="low"
+equal="equal"
+
+for i in range(1,8):
+ b=raw_input('please input \n')
+ if b=="equal":
+  x=val
+  print(val)
+  break
+
+ if b=="high":
+  min=val
+  val=(min+max)/2+1
+  print(val)
+
+ if b=="low":
+  max=val
+  val=(min+max)/2+1
+  print(val)
+
+print(val)
+
+
+
